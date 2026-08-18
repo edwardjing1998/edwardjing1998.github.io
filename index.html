@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="一个可直接发布到 GitHub Pages 的示例网站">
+  <title>我的 GitHub Pages 网站</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">MyPages</a>
+    <nav aria-label="主导航">
+      <a class="active" href="index.html">首页</a>
+      <a href="about.html">关于</a>
+      <a href="contact.html">联系</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <span class="eyebrow">GitHub Pages 示例</span>
+        <h1>欢迎来到我的第一个静态网站</h1>
+        <p>这个网站只使用 HTML、CSS 和 JavaScript，可以直接上传到 GitHub Pages，无需服务器或数据库。</p>
+        <div class="actions">
+          <a class="button primary" href="about.html">了解更多</a>
+          <button class="button secondary" id="helloButton" type="button">测试 JavaScript</button>
+        </div>
+        <p id="message" class="message" aria-live="polite"></p>
+      </div>
+      <img class="hero-image" src="assets/website.svg" alt="浏览器窗口和网页内容插图">
+    </section>
+
+    <section class="features">
+      <article class="card">
+        <span class="number">01</span>
+        <h2>简单</h2>
+        <p>解压 ZIP，把所有文件上传到仓库根目录即可。</p>
+      </article>
+      <article class="card">
+        <span class="number">02</span>
+        <h2>响应式</h2>
+        <p>页面可以适应电脑、平板和手机屏幕。</p>
+      </article>
+      <article class="card">
+        <span class="number">03</span>
+        <h2>容易修改</h2>
+        <p>直接编辑页面文字、颜色和链接即可定制。</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> MyPages · Hosted on GitHub Pages</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
